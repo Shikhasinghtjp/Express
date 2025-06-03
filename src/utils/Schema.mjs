@@ -14,9 +14,7 @@ export const ValidationSchema={
             errorMessage: 'Username must be a string',
         },
         displayName:{
-            notempty:{
-                errorMessage: 'Display name is required',
-            }
+            notempty: true,
         }
     }
 }
