@@ -14,6 +14,8 @@ router.get("/api/users",
     .isLength({min:3, max:10})
     .withMessage('Filter must be between 3 and 10 characters long'),
 (req, res) => {
+    
+    console.log(req.session.id);
     const result = validationResult(req);
     console.log(result);
     const {
